@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Help Patients</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #f05d23;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #f05d23;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input, select, textarea, button {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #f05d23;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e65100;
+        }
+
+        .certificate {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .certificate button {
+            padding: 0.5rem 1rem;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .certificate button:hover {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Donate to Help Critically Ill Patients</h1>
+</header>
+
+<div class="container">
+    <h2>Donation Form</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="amount">Donation Amount (INR):</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter amount in INR" required>
+
+        <label for="message">Message (optional):</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write a message for the patient"></textarea>
+
+        <button type="submit">Donate Now</button>
+    </form>
+
+    <div class="certificate">
+        <h2>Certificate of Donation</h2>
+        <p>Click the button below to download your donation certificate.</p>
+        <button onclick="alert('Your certificate will be downloaded.');">Download Certificate</button>
+    </div>
+</div>
+
+</body>
+</html>
